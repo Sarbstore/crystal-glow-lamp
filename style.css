@@ -8,6 +8,12 @@
     padding: 0%;
 }
 
+body{
+    background-image: url(pexels-adrien-olichon-3137083.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 #navlist{
     display: flex;
     flex-direction: row;
@@ -30,4 +36,33 @@ a{
 
 a:hover{
     color: black;
+}
+
+#content{
+    position: relative;
+    top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content > img{
+    width: 300px;
+    box-shadow: 5px 8px 20px black;
+    border: 1px;
+    border-style: solid;
+    border-color: cornflowerblue;
+}
+#content > img:hover{
+    border-color: white;
+    opacity: 95%;
+}
+
+#heading{
+    color: white;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 3px 2px 5px black;
 }
