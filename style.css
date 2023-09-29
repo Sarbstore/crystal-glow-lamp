@@ -19,6 +19,7 @@ body{
     flex-direction: row;
     gap: 10%;
     background-color: cornflowerblue;
+
 }
 
 #navbar > #navlist > li{
@@ -51,11 +52,13 @@ a:hover{
     box-shadow: 5px 8px 20px black;
     border: 1px;
     border-style: solid;
-    border-color: cornflowerblue;
+    border-color: black;
+    transition-duration: 0.3s;
 }
 #content > img:hover{
     border-color: white;
     opacity: 95%;
+    box-shadow: 3px 5px 10px black;
 }
 
 #heading{
