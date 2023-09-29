@@ -8,40 +8,36 @@
     padding: 0%;
 }
 
-body{
-    background-image: url(pexels-adrien-olichon-3137083.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 #navlist{
     display: flex;
     flex-direction: row;
     gap: 10%;
-    background-color: cornflowerblue;
-
+    background-color: transparent;
+    
 }
 
 #navbar > #navlist > li{
-    padding: 10px;
+    padding: 15px 10px;
     list-style: none;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     text-decoration: none;
+    background: blur(5px);
 }
 
 a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 a:hover{
-    color: black;
+    color: brown;
 }
 
 #content{
     position: relative;
-    top: 100px;
+    top: 80px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,4 +64,28 @@ a:hover{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     text-shadow: 3px 2px 5px black;
+}
+
+
+#information{
+    position: relative;
+    top: 110px;
+    width: auto;
+    font-family: 'Poppins', sans-serif;
+
+}
+#description{
+    margin: 0px 20px;
+    position: relative;
+    top: 100px;
+    width: auto;
+    height: fit-content;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+}
+#description > p{
+    margin: 5px 20px;
 }
