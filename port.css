@@ -1,0 +1,213 @@
+*/{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+#headerlist{
+    position: relative;
+    top: 0;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    list-style: none;
+    background-color:#3B3C36;
+    animation-name: forheader;
+    animation-duration: 0.5s;
+}
+
+@keyframes forheader{
+    0%{top: -60px}
+    100%{top: 0px;}
+}
+
+#headerlist > li{
+    padding: 20px 15px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#headerlist > li:hover{
+    background-color: #696969;
+    transition: 0.5s;
+    box-shadow: 1px 1px 8px white, -1px -1px 8px white;
+}
+
+#headerlist > li:active{
+    color: black;
+    background-color: white;
+    transition: 0s;
+}
+
+#home{
+    margin: 0%;
+    padding: 0%;
+    height: 680px;
+    width: 100%;
+    background-color: darkgray;
+    animation-name: forhome;
+    animation-duration: 5s;
+}
+
+@keyframes forhome{
+    0%{background-color: white;}
+    100%{background-color: darkgray;}
+}
+
+#home > h1{
+    position: relative;
+    top: 10px;
+    margin: 0px 10px;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    animation-name: forheading;
+    animation-duration: 3s;
+}
+@keyframes forheading{
+    0%{top: -300px;}
+    100%{top: 10px;}
+}
+
+#home > p{
+    position: relative;
+    top: 20px ;
+    margin: 0;
+    padding: 0px 10px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    animation-name: forparagraph;
+    animation-duration: 4s;
+}
+@keyframes forparagraph{
+    0%{top: -500px;}
+    100%{top: 20px;}
+}
+
+
+#spanforhello{
+    font-size: 60px;
+}
+
+#home > #spanner > img{
+    margin: 0%;
+    padding: 0;
+    height: 200px;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#home > #spanner{
+    position: relative;
+    top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: forspanner 3s ease-in-out;
+}
+
+@keyframes forspanner{
+    0%{left:-100%;}
+    100%{left:0px;}
+}
+
+@keyframes rotate{
+    0%{rotate: 360deg;}
+    100%{rotate: 0deg;}
+}
+
+#mycareer{
+    position: relative;
+    top: 0;
+    height: 500px;
+    width: auto;
+    background-color: #3B3C36;
+}
+
+#idone{
+    position: relative;
+    top: 20px;
+    font-size: 30px;
+    color: black;
+    padding: 20px 50px;
+    background-color: white;
+    box-shadow: 1px 1px 10px black;
+    font-family: 'Poppins', sans-serif;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.animationforidone{
+    animation-name: foridone;
+    animation-duration: 2s;
+}
+
+@keyframes foridone{
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+
+
+#careerlist{
+    position: relative;
+    top: 20px;
+    margin: 0;
+    margin-left: 10px;
+    padding: 10px 15px;
+    text-align: center;
+    list-style: none;
+    font-size: 15px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#careerlist > li{
+    /* padding: 0px 1px; */
+    box-shadow: 0px 0px 5px black;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    animation-name: border;
+    animation-duration: 3s;
+}
+
+@keyframes border{
+    0%{border-bottom: -100%;}
+    100%{border-bottom: 100%;}
+}
+
+span{
+    font-size: 20px;
+}
+
+#mycareer > div > h3{
+    margin: 10px 10px;
+    margin-bottom: 25px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+}
+.animationformycareerh3{
+    animation-name: formycareerh3;
+    animation-duration: 3s;
+}
+@keyframes formycareerh3{
+    0%{opacity: 0;}
+    100%{opacity: 100%;}
+}
+
