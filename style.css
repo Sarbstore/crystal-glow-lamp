@@ -23,6 +23,7 @@ body{
     background-color: white;
     width: 100%;
     height: fit-content;
+    box-shadow: 0px 0px 8px black;
 }
 
 #navbar > #navlist > li{
@@ -45,6 +46,7 @@ a:hover{
     background-color: lightgray;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 5px black;
 }
 a:active{
     background-color: black;
@@ -67,6 +69,7 @@ a:active{
     border-color: black;
     transition-duration: 0.3s;
 }
+
 #content > img:hover{
     border-color: white;
     opacity: 95%;
@@ -79,16 +82,25 @@ a:active{
     top: 100px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    text-shadow: 3px 2px 5px black;
+    text-shadow: 3px 2px 6px black;
+    animation-name: animationforheading;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
+@keyframes animationforheading{
+    0%{text-shadow: 3px 2px 6px black; color: white;}
+    50%{text-shadow: 3px 2px 6px white; color: black;}
+    100%{text-shadow: 3px 2px 6px black; color: white;}
+}
 
 #information{
+    color: white;
     position: relative;
     top: 110px;
     width: auto;
     font-family: 'Poppins', sans-serif;
-
+    text-shadow: 0px 0px 5px black;
 }
 #description{
     margin: 0px 20px;
@@ -104,4 +116,53 @@ a:active{
 }
 #description > p{
     margin: 5px 20px;
+}
+
+#bottomheading{
+    position: relative;
+    top: 120px;
+    color: white;
+    text-align: center;
+    text-shadow: 0px 0px 5px black;
+}
+
+#images{
+    position: relative;
+    top: 130px;
+}
+
+#onscreenimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#images > #onscreenimg > img{
+    border: solid 1px white;
+    width: 300px;
+}
+
+
+#sideimgs1{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+}
+#sideimgs1 > img{
+    border: 1px solid white;
+    width: 100px;
+}
+
+#sideimgs2{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+}
+#sideimgs2 > img{
+    border: 1px solid white;
+    width: 100px;
 }
