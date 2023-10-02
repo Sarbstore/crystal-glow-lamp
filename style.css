@@ -97,7 +97,7 @@ a:active{
 #information{
     color: white;
     position: relative;
-    top: 110px;
+    top: 150px;
     width: auto;
     font-family: 'Poppins', sans-serif;
     text-shadow: 0px 0px 5px black;
@@ -105,7 +105,7 @@ a:active{
 #description{
     margin: 0px 20px;
     position: relative;
-    top: 100px;
+    top: 150px;
     width: auto;
     height: fit-content;
     background-color: lightgray;
@@ -135,15 +135,19 @@ a:active{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 300px;
 }
 
 #images > #onscreenimg > img{
-    border: solid 1px white;
     width: 300px;
+    transition: 4s;
+    box-shadow: 3px 2px 5px black;
 }
 
 
 #sideimgs1{
+    position: relative;
+    top: 0px;
     height: 100px;
     display: flex;
     align-items: center;
@@ -151,18 +155,46 @@ a:active{
     padding-left: 10px;
 }
 #sideimgs1 > img{
-    border: 1px solid white;
-    width: 100px;
+    width: 50px;
+    padding: 5px 10px;
+    background-color: lightgrey;
+    border-radius: 5px;
+
 }
 
-#sideimgs2{
-    height: 100px;
+#sideimgs1 > #sideimg4{
+    padding: 15px 5px;
+    border-radius: 5px;
+}
+
+#buy{
+    position: relative;
+    top: 130px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 10px;
 }
-#sideimgs2 > img{
+
+#buybutton{
+    color: white;
+    text-shadow: 1px 1px 0px black;
+    font-size: 30px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    font-family: 'Poppins', sans-serif;
+    background: transparent;
     border: 1px solid white;
-    width: 100px;
+    transition: 0.5s;
+    animation-name: animate;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    cursor: pointer;
 }
+
+@keyframes animate{
+    0%{border-color: white; background-color: red;}
+    50%{border-color: red; background-color: white;}
+    100%{border-color: white;background-color: red;}
+}
+
